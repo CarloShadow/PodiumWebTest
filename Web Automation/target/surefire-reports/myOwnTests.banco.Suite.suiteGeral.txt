@@ -1,0 +1,201 @@
+-------------------------------------------------------------------------------
+Test set: myOwnTests.banco.Suite.suiteGeral
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 99.506 sec <<< FAILURE! - in myOwnTests.banco.Suite.suiteGeral
+test2AlterarConta on test2AlterarConta(myOwnTests.banco.Tests.testsContas)(myOwnTests.banco.Tests.testsContas)  Time elapsed: 11.994 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Listar"}
+  (Session info: MicrosoftEdge=88.0.705.68)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-441JRQV', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{networkConnectionEnabled=false, msedge={msedgedriverVersion=87.0.664.75 (4da88d617daabd8aec59b88632014fe98444caeb-refs/heads/master@{#838960}), userDataDir=C:\Users\CJ\AppData\Local\Temp\scoped_dir2128_123279513}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), acceptInsecureCerts=false, browserVersion=88.0.705.68, browserName=msedge, javascriptEnabled=true, platformName=WINDOWS, ms:edgeOptions={debuggerAddress=localhost:59318}, setWindowRect=true, webauthn:virtualAuthenticators=true}]
+Session ID: aaae598fccc668ceaa1a103f12260e72
+*** Element info: {Using=link text, value=Listar}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:410)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at myOwnTests.banco.Pages.DSL.clicarBotaoBy(DSL.java:107)
+	at myOwnTests.banco.Pages.BasePage.setClickListar(BasePage.java:69)
+	at myOwnTests.banco.Tests.testsContas.test2AlterarConta(testsContas.java:45)
+
+test3InserirContaExistente on test3InserirContaExistente(myOwnTests.banco.Tests.testsContas)(myOwnTests.banco.Tests.testsContas)  Time elapsed: 11.407 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-danger']"}
+  (Session info: MicrosoftEdge=88.0.705.68)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-441JRQV', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{networkConnectionEnabled=false, msedge={msedgedriverVersion=87.0.664.75 (4da88d617daabd8aec59b88632014fe98444caeb-refs/heads/master@{#838960}), userDataDir=C:\Users\CJ\AppData\Local\Temp\scoped_dir13732_602435890}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), acceptInsecureCerts=false, browserVersion=88.0.705.68, browserName=msedge, javascriptEnabled=true, platformName=WINDOWS, ms:edgeOptions={debuggerAddress=localhost:59344}, setWindowRect=true, webauthn:virtualAuthenticators=true}]
+Session ID: 67377ecd06f3831b7ddb2bd796f7ae0a
+*** Element info: {Using=xpath, value=//div[@class='alert alert-danger']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at myOwnTests.banco.Pages.DSL.obterTexto(DSL.java:127)
+	at myOwnTests.banco.Pages.BasePage.obterTextoJaExisteConta(BasePage.java:97)
+	at myOwnTests.banco.Tests.testsContas.test3InserirContaExistente(testsContas.java:70)
+
+test1FazerMovimentacao on test1FazerMovimentacao(myOwnTests.banco.Tests.testsMovimentacao)(myOwnTests.banco.Tests.testsMovimentacao)  Time elapsed: 10.534 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Criar Movimentação"}
+  (Session info: MicrosoftEdge=88.0.705.68)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-441JRQV', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{networkConnectionEnabled=false, msedge={msedgedriverVersion=87.0.664.75 (4da88d617daabd8aec59b88632014fe98444caeb-refs/heads/master@{#838960}), userDataDir=C:\Users\CJ\AppData\Local\Temp\scoped_dir8848_1690205706}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), acceptInsecureCerts=false, browserVersion=88.0.705.68, browserName=msedge, javascriptEnabled=true, platformName=WINDOWS, ms:edgeOptions={debuggerAddress=localhost:59375}, setWindowRect=true, webauthn:virtualAuthenticators=true}]
+Session ID: 8c7bc0923b1027d39a204d1d8628094e
+*** Element info: {Using=link text, value=Criar Movimentação}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:410)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at myOwnTests.banco.Pages.DSL.clicarBotaoBy(DSL.java:107)
+	at myOwnTests.banco.Pages.BasePage.setClickMovimentacao(BasePage.java:101)
+	at myOwnTests.banco.Tests.testsMovimentacao.test1FazerMovimentacao(testsMovimentacao.java:28)
+
+test2CamposObrigatorios on test2CamposObrigatorios(myOwnTests.banco.Tests.testsMovimentacao)(myOwnTests.banco.Tests.testsMovimentacao)  Time elapsed: 10.78 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Criar Movimentação"}
+  (Session info: MicrosoftEdge=88.0.705.68)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-441JRQV', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{networkConnectionEnabled=false, msedge={msedgedriverVersion=87.0.664.75 (4da88d617daabd8aec59b88632014fe98444caeb-refs/heads/master@{#838960}), userDataDir=C:\Users\CJ\AppData\Local\Temp\scoped_dir14032_51997814}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), acceptInsecureCerts=false, browserVersion=88.0.705.68, browserName=msedge, javascriptEnabled=true, platformName=WINDOWS, ms:edgeOptions={debuggerAddress=localhost:59403}, setWindowRect=true, webauthn:virtualAuthenticators=true}]
+Session ID: 712de6e09a3ca9def3f30c19bf890f3b
+*** Element info: {Using=link text, value=Criar Movimentação}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:410)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at myOwnTests.banco.Pages.DSL.clicarBotaoBy(DSL.java:107)
+	at myOwnTests.banco.Pages.BasePage.setClickMovimentacao(BasePage.java:101)
+	at myOwnTests.banco.Tests.testsMovimentacao.test2CamposObrigatorios(testsMovimentacao.java:54)
+
+test3MovimentacaoFutura on test3MovimentacaoFutura(myOwnTests.banco.Tests.testsMovimentacao)(myOwnTests.banco.Tests.testsMovimentacao)  Time elapsed: 11.063 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Criar Movimentação"}
+  (Session info: MicrosoftEdge=88.0.705.68)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-441JRQV', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{networkConnectionEnabled=false, msedge={msedgedriverVersion=87.0.664.75 (4da88d617daabd8aec59b88632014fe98444caeb-refs/heads/master@{#838960}), userDataDir=C:\Users\CJ\AppData\Local\Temp\scoped_dir13832_632677492}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), acceptInsecureCerts=false, browserVersion=88.0.705.68, browserName=msedge, javascriptEnabled=true, platformName=WINDOWS, ms:edgeOptions={debuggerAddress=localhost:59431}, setWindowRect=true, webauthn:virtualAuthenticators=true}]
+Session ID: 756e754520440948c57ffec871196c3c
+*** Element info: {Using=link text, value=Criar Movimentação}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:410)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at myOwnTests.banco.Pages.DSL.clicarBotaoBy(DSL.java:107)
+	at myOwnTests.banco.Pages.BasePage.setClickMovimentacao(BasePage.java:101)
+	at myOwnTests.banco.Tests.testsMovimentacao.test3MovimentacaoFutura(testsMovimentacao.java:72)
+
+test3RemoverContaComMovimentacao on test3RemoverContaComMovimentacao(myOwnTests.banco.Tests.testExlcuirContaComMovimentacao)(myOwnTests.banco.Tests.testExlcuirContaComMovimentacao)  Time elapsed: 11.265 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//tr[8]/td[-1]"}
+  (Session info: MicrosoftEdge=88.0.705.68)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-441JRQV', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{networkConnectionEnabled=false, msedge={msedgedriverVersion=87.0.664.75 (4da88d617daabd8aec59b88632014fe98444caeb-refs/heads/master@{#838960}), userDataDir=C:\Users\CJ\AppData\Local\Temp\scoped_dir12860_995013501}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), acceptInsecureCerts=false, browserVersion=88.0.705.68, browserName=msedge, javascriptEnabled=true, platformName=WINDOWS, ms:edgeOptions={debuggerAddress=localhost:59460}, setWindowRect=true, webauthn:virtualAuthenticators=true}]
+Session ID: 378fb13d89ac17f1d51304208e142339
+*** Element info: {Using=xpath, value=.//tr[8]/td[-1]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:179)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByXPath(RemoteWebElement.java:255)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:175)
+	at myOwnTests.banco.Pages.DSL.obterCelula(DSL.java:239)
+	at myOwnTests.banco.Pages.BasePage.setClicarExcluirConta(BasePage.java:222)
+	at myOwnTests.banco.Tests.testExlcuirContaComMovimentacao.test3RemoverContaComMovimentacao(testExlcuirContaComMovimentacao.java:29)
+
+test1ExcluirMovimentacao on test1ExcluirMovimentacao(myOwnTests.banco.Tests.testResumo)(myOwnTests.banco.Tests.testResumo)  Time elapsed: 12.053 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//tbody/tr[1]/td[6]/a[1]/span[1]"}
+  (Session info: MicrosoftEdge=88.0.705.68)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-441JRQV', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{networkConnectionEnabled=false, msedge={msedgedriverVersion=87.0.664.75 (4da88d617daabd8aec59b88632014fe98444caeb-refs/heads/master@{#838960}), userDataDir=C:\Users\CJ\AppData\Local\Temp\scoped_dir2228_1521438729}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), acceptInsecureCerts=false, browserVersion=88.0.705.68, browserName=msedge, javascriptEnabled=true, platformName=WINDOWS, ms:edgeOptions={debuggerAddress=localhost:59519}, setWindowRect=true, webauthn:virtualAuthenticators=true}]
+Session ID: b908febc903fcfe8f9aa8fb686a12746
+*** Element info: {Using=xpath, value=//tbody/tr[1]/td[6]/a[1]/span[1]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at myOwnTests.banco.Pages.DSL.clicarBotaoBy(DSL.java:107)
+	at myOwnTests.banco.Pages.BasePage.setClickExcluirMovimentacao(BasePage.java:205)
+	at myOwnTests.banco.Tests.testResumo.test1ExcluirMovimentacao(testResumo.java:36)
+

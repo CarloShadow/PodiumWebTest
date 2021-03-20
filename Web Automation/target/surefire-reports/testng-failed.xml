@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" junit="true" name="Failed suite [Surefire suite]" verbose="0">
+  <test junit="true" thread-count="3" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="org.junit.runner.Description">
+        <methods>
+          <include name="test1FazerMovimentacao"/>
+          <include name="test2AlterarConta"/>
+          <include name="test3RemoverContaComMovimentacao"/>
+          <include name="test2CamposObrigatorios"/>
+          <include name="test3MovimentacaoFutura"/>
+          <include name="test3InserirContaExistente"/>
+          <include name="test1ExcluirMovimentacao"/>
+        </methods>
+      </class> <!-- org.junit.runner.Description -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
