@@ -2,9 +2,8 @@
 
 ## 📃 Instructions
 ```
-To run PodiumWebTest on a MAC iOS, put the directory of the msedgedriver.exe (Microsft
-Edge WebDriver) from your computer. The class to put the directory is in the "Suport"
-package and it's named "BaseTest", it's located on the 14 line.
+To run PodiumWebTest on a MAC iOS, put the directory of the msedgedriver.exe (Microsft Edge WebDriver) 
+from your computer on the 14 line of "BaseTest.java" class, it's located in the "Suport" package. 
 ```
 ---
 ## 🏃‍♂️Test Runner
@@ -14,8 +13,7 @@ mvn test
 ---
 ## 📖About
 ```
-The PodiumWebTest roject was made to explore the Podium website and to show how
-I organize my codes.
+The PodiumWebTest roject was made to explore the Podium website and to show how I organize my codes.
 ```
 ---
 ## Tools
