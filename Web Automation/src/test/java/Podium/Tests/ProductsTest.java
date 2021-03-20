@@ -1,4 +1,4 @@
-package Podium.Test;
+package Podium.Tests;
 
 import Podium.Pages.ProductsPage;
 import Podium.Suport.BaseTest;

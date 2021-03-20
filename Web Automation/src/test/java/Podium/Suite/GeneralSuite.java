@@ -1,8 +1,8 @@
 package Podium.Suite;
 
-import Podium.Test.FormsFillingTest;
+import Podium.Tests.FormsFillingTest;
 import org.junit.runners.Suite;
-import Podium.Test.ProductsTest;
+import Podium.Tests.ProductsTest;
 import org.junit.runners.Suite.SuiteClasses;
 import org.junit.runner.RunWith;
 

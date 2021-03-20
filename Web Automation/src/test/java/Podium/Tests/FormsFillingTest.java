@@ -1,4 +1,4 @@
-package Podium.Test;
+package Podium.Tests;
 
 import Podium.Pages.FormsFillingPage;
 import Podium.Suport.BaseTest;

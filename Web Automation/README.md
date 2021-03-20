@@ -2,7 +2,7 @@
 
 ## 📃 Instructions
 ```
-To tun PodiumWebTest on a MAC iOS, put the directory of the msedgedriver.exe (Microsft
+To run PodiumWebTest on a MAC iOS, put the directory of the msedgedriver.exe (Microsft
 Edge WebDriver) from your computer. The class to put the directory is in the "Suport"
 package and it's named "BaseTest", it's located on the 14 line.
 ```
