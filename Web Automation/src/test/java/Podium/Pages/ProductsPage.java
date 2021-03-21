@@ -1,5 +1,6 @@
 package Podium.Pages;
 
+import Podium.Core.BasePage1;
 import org.openqa.selenium.By;
 
 public class ProductsPage extends BasePage1 {
@@ -17,88 +18,85 @@ public class ProductsPage extends BasePage1 {
     /*************************************** REVIEWS SETTINGS ***************************************/
 
     public String getReviewsButtonText() {
-        return page_.getTexts(By.xpath("//span[contains(text(),'Reviews')]"));
+        return page_.getTexts(By.linkText("Reviews"));
     }
 
     public void setClickOnReviews() {
-        page_.buttonClick(By.xpath("//span[contains(text(),'Reviews')]"));
+        page_.buttonClick(By.linkText("Reviews"));
     }
 
     public String getReviewsPageText() {
-        return page_.getTexts(By.xpath("//p[contains(text(),'Reviews')]"));
+        return page_.getTexts(By.linkText("Reviews"));
     }
 
     /*************************************** FEEDBACK SETTINGS ***************************************/
 
     public String getFeedbackButtonText() {
-        return page_.getTexts(By.xpath("//span[contains(text(),'Feedback')]"));
+        return page_.getTexts(By.linkText("Feedback"));
     }
 
     public void setClickFeedbackButton() {
-        page_.buttonClick(By.xpath("//span[contains(text(),'Feedback')]"));
+        page_.buttonClick(By.linkText("Feedback"));
     }
 
     public String getFeedbackPageText() {
-        return page_.getTexts(By.xpath("//body/div[@id='page']/div[@id='content']/div[@id='primary']/main[@id='main']" +
-                "/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]"));
+        return page_.getTexts(By.linkText("Feedback"));
     }
 
     /*************************************** PAYMENTS SETTINGS ***************************************/
 
     public String getPaymentsButtonText() {
-        return page_.getTexts(By.xpath("//span[contains(text(),'Payments')]"));
+        return page_.getTexts(By.linkText("Payments"));
     }
 
     public void setClickPaymentsButton() {
-        page_.buttonClick(By.xpath("//span[contains(text(),'Payments')]"));
+        page_.buttonClick(By.linkText("Payments"));
     }
 
     public String getPaymentsPageText() {
-        return page_.getTexts(By.xpath("//p[contains(text(),'Payments')]"));
+        return page_.getTexts(By.linkText("Payments"));
     }
 
     /*************************************** TEAMCHAT SETTINGS ***************************************/
 
     public String getTeamChatButtonText() {
-        return page_.getTexts(By.xpath("//span[contains(text(),'Teamchat')]"));
+        return page_.getTexts(By.linkText("Teamchat"));
     }
 
     public void setClickTeamChatButton() {
-        page_.buttonClick(By.xpath("//span[contains(text(),'Teamchat')]"));
+        page_.buttonClick(By.linkText("Teamchat"));
     }
 
     public String getTeamChatPageText() {
-        return page_.getTexts(By.xpath("//p[contains(text(),'Teamchat')]"));
+        return page_.getTexts(By.linkText("Teamchat"));
     }
 
     /*************************************** VIDEOCHAT SETTINGS ***************************************/
 
     public String getVideoChatButtonText() {
-        return page_.getTexts(By.xpath("//span[contains(text(),'Videochat')]"));
+        return page_.getTexts(By.linkText("Videochat"));
     }
 
     public void setClickVideoChatButton() {
-        page_.buttonClick(By.xpath("//span[contains(text(),'Videochat')]"));
+        page_.buttonClick(By.linkText("Videochat"));
     }
 
     public String getVideoChatPageText() {
-        return page_.getTexts(By.xpath(" //body/div[@id='page']/div[@id='content']/div[@id='primary']/main[@id='main']" +
-                "/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]"));
+        return page_.getTexts(By.linkText("Videochat"));
     }
 
     /*************************************** WEBCHAT SETTINGS ***************************************/
 
     public String getWebChatButtonText() {
-        return page_.getTexts(By.xpath("//span[contains(text(),'Webchat')]"));
+        return page_.getTexts(By.linkText("Webchat"));
     }
 
     public void setClickWebchatButton() {
-        page_.buttonClick(By.xpath("//span[contains(text(),'Webchat')]"));
+        page_.buttonClick(By.linkText("Webchat"));
     }
 
     public String getWebChatPageText() {
-        return page_.getTexts(By.xpath("//body/div[@id='page']/div[@id='content']/div[@id='primary']/main[@id='main']" +
-                "/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]"));
+        return page_.getTexts(By.linkText("Webchat"));
     }
 
     /*************************************** INBOX SETTINGS ***************************************/

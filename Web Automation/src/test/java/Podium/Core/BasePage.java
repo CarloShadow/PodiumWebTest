@@ -1,9 +1,9 @@
-package Podium.Pages;
+package Podium.Core;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import static Podium.Suport.DriverFactory.getDriver;
+import static Podium.Core.DriverFactory.getDriver;
 
 public class BasePage {
 

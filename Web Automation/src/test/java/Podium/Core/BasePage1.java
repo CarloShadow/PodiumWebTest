@@ -1,4 +1,4 @@
-package Podium.Pages;
+package Podium.Core;
 
 public class BasePage1 {
     protected final BasePage page_;

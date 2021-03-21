@@ -1,7 +1,7 @@
 package Podium.Tests;
 
 import Podium.Pages.ProductsPage;
-import Podium.Suport.BaseTest;
+import Podium.Core.BaseTest;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

@@ -1,9 +1,9 @@
-package Podium.Suport;
+package Podium.Core;
 
 
-import Podium.Pages.BasePage1;
+import Podium.Core.BasePage1;
 
-import static Podium.Suport.DriverFactory.getDriver;
+import static Podium.Core.DriverFactory.getDriver;
 
 public class Link extends BasePage1 {
 

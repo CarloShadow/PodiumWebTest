@@ -1,5 +1,6 @@
 package Podium.Pages;
 
+import Podium.Core.BasePage1;
 import org.openqa.selenium.By;
 
 public class FormsFillingPage extends BasePage1 {

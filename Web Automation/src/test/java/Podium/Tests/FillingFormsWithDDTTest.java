@@ -3,7 +3,7 @@
 package Podium.Tests;
 
 import Podium.Pages.FillingFormsWithDDTPage;
-import Podium.Suport.BaseTest;
+import Podium.Core.BaseTest;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -13,7 +13,7 @@ import java.util.Arrays;
 import org.junit.runners.Parameterized.Parameter;
 import java.util.Collection;
 import org.junit.runners.Parameterized.Parameters;
-import static Podium.Suport.DriverFactory.getDriver;
+import static Podium.Core.DriverFactory.getDriver;
 
 @RunWith(Parameterized.class)
 public class FillingFormsWithDDTTest extends BaseTest {

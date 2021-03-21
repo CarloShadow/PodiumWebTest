@@ -3,14 +3,26 @@
 ## 📃 Instructions
 
 ```
-To run PodiumWebTest on a MAC iOS, put the directory of the chromedriver.exe (Google Chrome WebDriver) 
-from your computer on the 14 line of "BaseTest.java" class, it's located in the "Suport" package. 
+1) To run PodiumWebTest on a MAC iOS, put the path of the browser driver from 
+your computer on the line 11 of "BaseTest.java" class, it's located in the 
+"Core" package. Just replace the path that's already inside the 
+"driverFilePath" variable.
+
+2) Also on "BaseTest.java" class, change the browser name in the "driverName" variable,
+it's on line 12 (Choose between, "chrome", "edge", "gecko" and "safari").
+
+3) To finish, also on "Core" package, on "Properties.java" class, select the name of
+your browser on line 5. (Choose between, CHROME, FIREFOX, EDGE, SAFARI).
 
 ```
+## Drivers
+ - [Google Chrome](https://chromedriver.chromium.org/downloads)
+ - [Microsoft Edge](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/)
+ - [Mozilla Firefox](https://github.com/mozilla/geckodriver/releases)
 
 ## 🏃‍♂ Test Runner
 ```sh
-mvn test
+JUnit test
 ```
 
 ## 📖 About
@@ -22,8 +34,8 @@ skills and how I organize my codes.
 
 ## 🔧 Tools
 
- - [Java](https://www.java.com/)
- - [Selenium](https://www.selenium.dev/)
- - [JUnit](https://junit.org/)
- - [TestNG](https://testng.org/doc/)
- - [EasyTest](https://mvnrepository.com/artifact/org.easetech/easytest-core/1.4.0)
+ - [Java 8](https://www.oracle.com/br/java/technologies/javase/javase-jdk8-downloads.html)
+ - [Selenium 3.6.0](https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java/3.6.0)
+ - [JUnit](https://mvnrepository.com/artifact/junit/junit/4.12)
+ - [TestNG 6.14.3](https://mvnrepository.com/artifact/org.testng/testng/6.14.3)
+ - [EasyTest 1.4.0](https://mvnrepository.com/artifact/org.easetech/easytest-core/1.4.0)
