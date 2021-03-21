@@ -12,7 +12,7 @@ your computer on the line 11 of "BaseTest.java" class, it's located in the
 it's on line 12 (Choose between, "chrome", "edge", "gecko" and "safari").
 
 3) To finish, also on "Core" package, on "Properties.java" class, select the name of
-your browser on line 5. (Choose between, CHROME, FIREFOX, EDGE, SAFARI).
+your browser on line 7. (Choose between, CHROME, FIREFOX, EDGE, SAFARI).
 
 ```
 ## Drivers

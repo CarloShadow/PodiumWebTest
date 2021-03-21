@@ -1,6 +1,5 @@
 package Podium.Core;
 
-import Podium.Core.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -21,10 +20,14 @@ public class DriverFactory {
                 case CHROME: driver = new ChromeDriver(); break;
                 case EDGE: driver = new EdgeDriver(); break;
                 case SAFARI: driver = new SafariDriver(); break;
-
             }
-
         }
         return driver;
+    }
+    public static void killDriver(){
+        if(driver != null) {
+            driver.quit();
+            driver = null;
+        }
     }
 }
