@@ -12,7 +12,7 @@ public class DriverFactory {
 
     public static WebDriver getDriver(){
         if (driver == null) {
-            driver = new EdgeDriver();
+            driver = new ChromeDriver();
         }
         return driver;
     }

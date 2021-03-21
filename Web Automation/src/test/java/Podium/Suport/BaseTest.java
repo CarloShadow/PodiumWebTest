@@ -12,7 +12,7 @@ public class BaseTest {
     public void PesquisaImoveis() {
         // Opens Driver
         System.setProperty("org.apache.commons.logging.Log", "org.apache.commons.logging.impl.Jdk14Logger");
-        System.setProperty("webdriver.edge.driver", "C:\\Users\\CJ\\webdrivers1\\msedgedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\CJ\\webdrivers\\chromedriver.exe");
         getDriver().manage().window().maximize();
         getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 

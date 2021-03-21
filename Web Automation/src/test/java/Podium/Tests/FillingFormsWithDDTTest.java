@@ -16,6 +16,8 @@ import static Podium.Suport.DriverFactory.getDriver;
 @RunWith(Parameterized.class)
 public class FillingFormsWithDDTTest extends BaseTest {
 
+    FormsFillingPage page = new FormsFillingPage();
+
     @Parameter
     public String firstName;
     @Parameter(value=1)
@@ -27,8 +29,7 @@ public class FillingFormsWithDDTTest extends BaseTest {
     @Parameter(value=4)
     public String mobilePhone;
 
-    FormsFillingPage page = new FormsFillingPage();
-
+    // Data to fill the forms
     @Parameters
     public static Collection<Object[]> getCollection() {
         return Arrays.asList(new Object[][]{
@@ -42,16 +43,24 @@ public class FillingFormsWithDDTTest extends BaseTest {
 
     @Test
     public void pricingFormsFilling() {
+
         // Verifying if "Pricing" button is present, clicking on it and validating the page
         Assert.assertEquals("Pricing", page.getPricingTextButton());
         page.setClickPricingButton();
         Assert.assertEquals("CUSTOM PRICING", page.getPricingPageText());
 
-
+        // Filling Pricing page forms (BUT NOT SENDING)
         getDriver().findElement(By.id("FirstName")).sendKeys(firstName);
         getDriver().findElement(By.id("LastName")).sendKeys(lastName);
         getDriver().findElement(By.id("Email")).sendKeys(email);
         getDriver().findElement(By.id("Company")).sendKeys(company);
         getDriver().findElement(By.id("MobilePhone")).sendKeys(mobilePhone);
+
+        // Verifying filled fields from Pricing page forms
+        Assert.assertEquals(firstName, page.getFirstNameTextPricingPage());
+        Assert.assertEquals(lastName, page.getLastNameTextPricingPage());
+        Assert.assertEquals(email, page.getEmailTextPricingPage());
+        Assert.assertEquals(company, page.getCompanyTextPricingPage());
+        Assert.assertEquals(mobilePhone, page.getMobilePhoneTextPricingPage());
     }
 }
