@@ -19,7 +19,6 @@ public class EnterpriseErrosSimulationTest extends BaseTest {
         Assert.assertEquals("Enterprise", page.getEnterpriseTextButton());
         page.setClickEnterpriseButton();
         Assert.assertEquals("ENTERPRISE", page.getEnterprisePageText());
-
     }
 
     @Test
@@ -27,7 +26,6 @@ public class EnterpriseErrosSimulationTest extends BaseTest {
         // Clicking on request button and verifying error message
         page.clickRequestButton();
         Assert.assertEquals("This field is required.", page.getFieldRequiredErrorText());
-
     }
 
     @Test
@@ -36,6 +34,5 @@ public class EnterpriseErrosSimulationTest extends BaseTest {
         page.setTypeInvalidEmail();
         Assert.assertEquals("AAAAAAAAAAAAAAAAAAAAAAAAAAA", page.getInvalidEmailText());
         page.clickRequestButton();
-
     }
 }
