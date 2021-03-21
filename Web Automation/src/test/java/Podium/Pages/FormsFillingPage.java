@@ -29,7 +29,7 @@ public class FormsFillingPage extends BasePage1 {
             return page_.getTexts(By.id("ValidMsgFirstName"));
     }
 
-    /*************************************** EMPTY ERROR SIMULATION  ***************************************/
+    /*************************************** INVALID E-MAIL ERROR SIMULATION  ***************************************/
 
     public void setTypeInvalidEmail() {
         page_.type(By.id("Email"), "AAAAAAAAAAAAAAAAAAAAAAAAAAA");
