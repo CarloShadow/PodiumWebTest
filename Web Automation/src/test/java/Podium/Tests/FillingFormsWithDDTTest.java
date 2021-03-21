@@ -1,6 +1,8 @@
+// OBSERVATION: I HAVEN'T SENT ANY DATA AS IT WAS ASKED
+
 package Podium.Tests;
 
-import Podium.Pages.FormsFillingPage;
+import Podium.Pages.FillingFormsWithDDTPage;
 import Podium.Suport.BaseTest;
 import org.junit.Assert;
 import org.junit.Test;
@@ -16,7 +18,7 @@ import static Podium.Suport.DriverFactory.getDriver;
 @RunWith(Parameterized.class)
 public class FillingFormsWithDDTTest extends BaseTest {
 
-    FormsFillingPage page = new FormsFillingPage();
+    FillingFormsWithDDTPage page = new FillingFormsWithDDTPage();
 
     @Parameter
     public String firstName;
@@ -42,7 +44,7 @@ public class FillingFormsWithDDTTest extends BaseTest {
     }
 
     @Test
-    public void pricingFormsFilling() {
+    public void mustFillPricingForms() {
 
         // Verifying if "Pricing" button is present, clicking on it and validating the page
         Assert.assertEquals("Pricing", page.getPricingTextButton());

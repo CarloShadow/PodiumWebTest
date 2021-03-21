@@ -16,7 +16,7 @@ mvn test
 ## 📖 About
 
 ```
-The PodiumWebTest project was made to explore the Podium website and to show my technical 
+The PodiumWebTest project was made to explore the Podium website, to show my technical 
 skills and how I organize my codes.
 ```
 

@@ -21,12 +21,12 @@ public class BasePage {
         act.moveToElement(products).perform();
     }
 
-    public void type(String id, String texto){
-        getDriver().findElement(By.id(id)).clear();
-        getDriver().findElement(By.id(id)).sendKeys(texto);
+    public void type(By id, String text){
+        getDriver().findElement(id).clear();
+        getDriver().findElement(id).sendKeys(text);
     }
 
-    public String getFieldValue(String id_campo) {
-        return getDriver().findElement(By.id(id_campo)).getAttribute("value");
+    public String getFieldValue(String id_field) {
+        return getDriver().findElement(By.id(id_field)).getAttribute("value");
     }
 }

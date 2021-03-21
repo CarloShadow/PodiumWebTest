@@ -11,7 +11,7 @@ public class ProductsTest extends BaseTest {
     ProductsPage page = new ProductsPage();
 
     @Before
-    public void productsStarting() {
+    public void productsStartingTest() {
 
         // Verifying if the "Products" button is present and mouse hovering on it
         Assert.assertEquals("Products", page.getProductsButtonText());
@@ -20,7 +20,7 @@ public class ProductsTest extends BaseTest {
     }
 
     @Test
-    public void reviewsPageTest() {
+    public void mustVerifyReviewsPageTest() {
 
         // Verifying "Reviews" button, clicking on it and validating the page
         Assert.assertEquals("Reviews" ,page.getReviewsButtonText());
@@ -29,7 +29,7 @@ public class ProductsTest extends BaseTest {
     }
 
     @Test
-    public void feedbackPageTest() {
+    public void mustVerifyFeedbackPageTest() {
 
         // Verifying "Feedback" button, clicking on it and validating the page
         Assert.assertEquals("Feedback", page.getFeedbackButtonText());
@@ -39,7 +39,7 @@ public class ProductsTest extends BaseTest {
     }
 
     @Test
-    public void paymentsPageTest() {
+    public void mustVerifyPaymentsPageTest() {
 
         // Verifying "Payments" button, clicking on it and validating the page
         Assert.assertEquals("Payments", page.getPaymentsButtonText());
@@ -48,7 +48,7 @@ public class ProductsTest extends BaseTest {
     }
 
     @Test
-    public void teamChatPageTest() {
+    public void mustVerifyTeamChatPageTest() {
 
         // Verifying "Teamchat" button, clicking on it and validating the page
         Assert.assertEquals("Teamchat", page.getTeamChatButtonText());
@@ -57,7 +57,7 @@ public class ProductsTest extends BaseTest {
     }
 
     @Test
-    public void videoChatPageTest() {
+    public void mustVerifyVideoChatPageTest() {
 
         // Verifying "Videochat" button, clicking on it and validating the page
         Assert.assertEquals("Videochat", page.getVideoChatButtonText());
@@ -66,7 +66,7 @@ public class ProductsTest extends BaseTest {
     }
 
     @Test
-    public void webChatPageTest() {
+    public void mustVerifyWebChatPageTest() {
 
         // Verifying "Webchat" button, clicking on it and validating the page
         Assert.assertEquals("Webchat", page.getWebChatButtonText());
@@ -75,7 +75,7 @@ public class ProductsTest extends BaseTest {
     }
 
     @Test
-    public void inboxPageTest() {
+    public void mustVerifyInboxPageTest() {
 
         // Verifying "Inbox" button, clicking on it and validating the page
         Assert.assertEquals("Inbox", page.getInboxButtonText());
@@ -84,7 +84,7 @@ public class ProductsTest extends BaseTest {
     }
 
     @Test
-    public void campaignsPageTest() {
+    public void mustVerifyCampaignsPageTest() {
 
         // Verifying "Campaigns" button, clicking on it and validating the page
         Assert.assertEquals("Campaigns", page.getCampaignsButtonText());
@@ -93,7 +93,7 @@ public class ProductsTest extends BaseTest {
     }
 
     @Test
-    public void freeVersionPageTest() {
+    public void mustVerifyFreeVersionPageTest() {
 
         // Verifying "Free Version" button, clicking on it and validating the page
         Assert.assertEquals("Interested in trying our free version?", page.getFreeVersionButtonText());
