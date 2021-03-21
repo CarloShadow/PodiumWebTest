@@ -8,14 +8,10 @@ from your computer on the 14 line of "BaseTest.java" class, it's located in the 
 
 ```
 
----
-
 ## 🏃‍♂️Test Runner
 ```sh
 mvn test
 ```
-
----
 
 ## 📖About
 
@@ -23,8 +19,6 @@ mvn test
 The PodiumWebTest project was made to explore the Podium website and to show my technical 
 skills and how I organize my codes.
 ```
-
----
 
 ## Tools
 
