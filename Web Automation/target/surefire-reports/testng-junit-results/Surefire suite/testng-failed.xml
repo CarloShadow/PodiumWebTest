@@ -6,7 +6,6 @@
       <class name="org.junit.runner.Description">
         <methods>
           <include name="mustVerifyCampaignsPageTest"/>
-          <include name="mustVerifyInboxPageTest"/>
           <include name="mustVerifyVideoChatPageTest"/>
         </methods>
       </class> <!-- org.junit.runner.Description -->
