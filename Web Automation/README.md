@@ -8,7 +8,7 @@ your computer on the line 24 of "BaseTest.java" class, it's located in the
 "Core" package. Just replace the path that's already inside the 
 "driverFilePath" variable.
 
-2) Also on "BaseTest.java" class, change the browser value of the "driverName" variable,
+2) Also on "BaseTest.java" class, change the browser name of the "driverName" variable,
 it's on line 26 (Choose between, "chrome", "edge", "gecko" and "safari").
 
 3) To finish, also on "Core" package, on "Properties.java" class, select the name of
