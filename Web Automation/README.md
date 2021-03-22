@@ -15,7 +15,7 @@ it's on line 26 (Choose between, "chrome", "edge", "gecko" and "safari").
 your browser on line 8. (Choose between, CHROME, FIREFOX, EDGE, SAFARI).
 
 ```
-## Drivers
+## 🚗 Drivers
  - [Google Chrome](https://chromedriver.chromium.org/downloads)
  - [Microsoft Edge](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/)
  - [Mozilla Firefox](https://github.com/mozilla/geckodriver/releases)
