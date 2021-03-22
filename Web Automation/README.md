@@ -36,7 +36,7 @@ skills and how I organize my codes.
 
  - [Java 8](https://www.oracle.com/br/java/technologies/javase/javase-jdk8-downloads.html)
  - [Selenium 3.6.0](https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java/3.6.0)
- - [MAVEN 3.0.0-M5](https://mvnrepository.com/artifact/org.apache.maven.surefire/surefire-booter/3.0.0-M5)  
+ - [Maven 3.0.0-M5](https://mvnrepository.com/artifact/org.apache.maven.surefire/surefire-booter/3.0.0-M5)  
  - [JUnit 4.12](https://mvnrepository.com/artifact/junit/junit/4.12)
  - [TestNG 6.14.3](https://mvnrepository.com/artifact/org.testng/testng/6.14.3)
  - [EasyTest 1.4.0](https://mvnrepository.com/artifact/org.easetech/easytest-core/1.4.0)
