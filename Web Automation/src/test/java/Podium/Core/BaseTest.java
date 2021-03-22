@@ -20,7 +20,9 @@ public class BaseTest {
 
     Link link = new Link();
 
+    // Put your browser driver below
     String driverFilePath = "C:\\Users\\CJ\\webdrivers\\chromedriver.exe";
+    // Choose you browser driver name | OPTIONS (chrome, edge, gecko or safari)
     String driverName = "chrome";
 
     @Before
@@ -30,7 +32,7 @@ public class BaseTest {
         getDriver().manage().window().maximize();
         getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-        link.acessHomePage();
+        link.accessHomePage();
     }
 
     @After

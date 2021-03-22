@@ -46,11 +46,11 @@ public class ProductsPage extends BasePage1 {
     /*************************************** PAYMENTS SETTINGS ***************************************/
 
     public String getPaymentsButtonText() {
-        return page_.getTexts(By.linkText("Payments"));
+        return page_.getTexts(By.xpath("//span[contains(text(),'Payments')]"));
     }
 
     public void setClickPaymentsButton() {
-        page_.buttonClick(By.linkText("Payments"));
+        page_.buttonClick(By.xpath("//span[contains(text(),'Payments')]"));
     }
 
     public String getPaymentsPageText() {
