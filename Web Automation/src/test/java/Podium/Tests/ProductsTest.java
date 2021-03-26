@@ -14,7 +14,7 @@ public class ProductsTest extends BaseTest {
     public void productsStartingTest() {
 
         // Verifying if the "Products" button is present and mouse hovering on it
-        Assert.assertEquals("Products", page.getProductsButtonText());
+       Assert.assertEquals("Products", page.getProductsButtonText());
         page.setMouseOverOnProductsButton();
 
     }

@@ -1,8 +1,10 @@
 package Podium.Core;
 
+import Podium.Pages.BasePage;
+
 import static Podium.Core.DriverFactory.getDriver;
 
-public class Link extends BasePage1 {
+public class Link_DeletedClass {
 
     public void accessHomePage() {
 

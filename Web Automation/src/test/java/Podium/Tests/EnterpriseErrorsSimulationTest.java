@@ -8,7 +8,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-public class EnterpriseErrosSimulationTest extends BaseTest {
+public class EnterpriseErrorsSimulationTest extends BaseTest {
 
     FormsFillingPage page = new FormsFillingPage();
 

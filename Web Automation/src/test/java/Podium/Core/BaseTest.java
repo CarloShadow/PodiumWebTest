@@ -18,7 +18,7 @@ public class BaseTest {
     @Rule
     public TestName testName = new TestName();
 
-    Link link = new Link();
+    //Link link = new Link(); (Deleted line)
 
     // Put your browser driver below
     String driverFilePath = "C:\\Users\\CJ\\webdrivers\\chromedriver.exe";
@@ -26,13 +26,16 @@ public class BaseTest {
     String driverName = "chrome";
 
     @Before
-    public void PesquisaImoveis() {
+    public void startBrowser() {
         // Opens Driver
         System.setProperty("webdriver." + driverName + ".driver", driverFilePath);
         getDriver().manage().window().maximize();
         getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-        link.accessHomePage();
+        // Link to access home page
+        getDriver().get("https://www.podium.com/");
+
+        //link.accessHomePage();  (Deleted line)
     }
 
     @After
@@ -42,7 +45,7 @@ public class BaseTest {
         FileUtils.copyFile(file, new File("src" + File.separator + "Screenshots" +
                 File.separator + testName.getMethodName() + ".jpg"));
 
-        if(Properties.FECHAR_BROWSER) {
+        if(Properties.CLOSE_BROWSER) {
             killDriver();
         }
     }

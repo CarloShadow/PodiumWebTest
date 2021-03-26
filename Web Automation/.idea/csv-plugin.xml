@@ -10,7 +10,35 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\src\test\java\Podium\Pages\FormsFillingPage.java">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\src\test\java\Podium\Pages\ProductsPage.java">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\src\test\java\Podium\Suite\GeneralSuite.java">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\src\test\java\Podium\Tests\EnterpriseErrorsSimulationTest.java">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\src\test\java\Podium\Tests\ProductsTest.java">
           <value>
             <Attribute>
               <option name="separator" value=";" />

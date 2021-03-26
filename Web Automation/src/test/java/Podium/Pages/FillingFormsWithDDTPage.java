@@ -1,44 +1,43 @@
 package Podium.Pages;
 
-import Podium.Core.BasePage1;
 import org.openqa.selenium.By;
 
-public class FillingFormsWithDDTPage extends BasePage1 {
+public class FillingFormsWithDDTPage extends BasePage {
 
     /***************************************** GOING TO PRICING PAGE *****************************************/
 
     public String getPricingTextButton() {
-        return page_.getTexts(By.linkText("Pricing"));
+        return getTexts(By.linkText("Pricing"));
     }
 
     public void setClickPricingButton() {
-        page_.buttonClick(By.linkText("Pricing"));
+        buttonClick(By.linkText("Pricing"));
     }
 
     public String getPricingPageText() {
-        return page_.getTexts(By.xpath("//div[contains(text(),'custom pricing')]"));
+        return getTexts(By.xpath("//div[contains(text(),'custom pricing')]"));
     }
 
 
-    /************************************ PRICING VERIFYING FILLED FORMS FIELD *******************************/
+    /************************************ VERIFYING PRICING FILLED FORMS FIELD *******************************/
 
     public String getFirstNameTextPricingPage() {
-        return page_.getFieldValue("FirstName");
+        return getFieldValue("FirstName");
     }
 
     public String getLastNameTextPricingPage() {
-        return page_.getFieldValue("LastName");
+        return getFieldValue("LastName");
     }
 
     public String getEmailTextPricingPage() {
-        return page_.getFieldValue("Email");
+        return getFieldValue("Email");
     }
 
     public String getCompanyTextPricingPage() {
-        return page_.getFieldValue("Company");
+        return getFieldValue("Company");
     }
 
     public String getMobilePhoneTextPricingPage() {
-        return page_.getFieldValue("MobilePhone");
+        return getFieldValue("MobilePhone");
     }
 }

@@ -8,7 +8,6 @@
     <version>1.0-SNAPSHOT</version>
 
     <build>
-
         <pluginManagement>
             <plugins>
                 <plugin>
@@ -24,8 +23,6 @@
         </pluginManagement>
     </build>
 
-
-
     <dependencies>
         <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>
@@ -34,7 +31,6 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
-
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>

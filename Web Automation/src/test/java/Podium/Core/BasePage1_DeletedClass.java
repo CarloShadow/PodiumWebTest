@@ -2,10 +2,11 @@ package Podium.Core;
 
 import Podium.Pages.BasePage;
 
-public class BasePage1 {
+public class BasePage1_DeletedClass {
+
     protected final BasePage page_;
 
-    public BasePage1() {
+    public BasePage1_DeletedClass() {
         page_ = new BasePage();
     }
 }

@@ -5,8 +5,22 @@
     <classes>
       <class name="org.junit.runner.Description">
         <methods>
-          <include name="mustVerifyCampaignsPageTest"/>
+          <include name="mustDoValidEmailError"/>
+          <include name="mustVerifyInboxPageTest"/>
+          <include name="mustVerifyWebChatPageTest"/>
+          <include name="mustVerifyFreeVersionPageTest"/>
+          <include name="mustFillPricingForms"/>
+          <include name="mustFillPricingForms"/>
+          <include name="mustFillPricingForms"/>
+          <include name="mustFillPricingForms"/>
+          <include name="mustFillPricingForms"/>
+          <include name="mustVerifyFeedbackPageTest"/>
           <include name="mustVerifyVideoChatPageTest"/>
+          <include name="mustVerifyTeamChatPageTest"/>
+          <include name="mustVerifyPaymentsPageTest"/>
+          <include name="mustVerifyCampaignsPageTest"/>
+          <include name="mustVerifyReviewsPageTest"/>
+          <include name="mustDoFieldRequiredError"/>
         </methods>
       </class> <!-- org.junit.runner.Description -->
     </classes>
