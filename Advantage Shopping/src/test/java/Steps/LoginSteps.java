@@ -1,37 +1,31 @@
 package Steps;
 
 import Core.Browser;
+import Core.Propriedades;
+import Core.Screenshots;
 import io.cucumber.java.After;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Então;
 import io.cucumber.java.pt.Quando;
-import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import java.io.File;
-import java.io.IOException;
-import java.util.Random;
 import static Core.DriverFactory.getDriver;
+import static Core.DriverFactory.killDriver;
 
 public class LoginSteps {
 
     Browser page = new Browser();
+    Screenshots images = new Screenshots();
 
-    Random gerador = new Random();
-    int numerosGerador = gerador.nextInt(9999);
-
-    @After
-    public void screenshots() {
-        try {
-            File file = ((TakesScreenshot)getDriver()).getScreenshotAs(OutputType.FILE);
-            FileUtils.copyFile(file, new File("src/screenshots/"+numerosGerador+"login.jpg"));
-        }catch (IOException e) {
-            e.printStackTrace();
+    @After()
+    public void fecharBrowser(){
+        images.screenshot();
+        if(Propriedades.FECHAR_BROWSER) {
+            killDriver();
         }
     }
-
     @Dado("que o usuario esta na tela de login")
     public void que_o_usuario_esta_na_tela_de_login() {
         page.iniciarBrowser();
@@ -64,7 +58,6 @@ public class LoginSteps {
         ((JavascriptExecutor) getDriver()).executeScript("arguments[0].click();", element);
         String textoUsernameCadastrado = getDriver().
                 findElement(By.linkText("Test81")).getText();
-        System.out.println(textoUsernameCadastrado);
         Assert.assertEquals("Test81", textoUsernameCadastrado);
     }
 }

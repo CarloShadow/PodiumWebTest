@@ -1,20 +1,19 @@
 package Steps;
 
 import Core.Browser;
+import Core.Propriedades;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.After;
-import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.openqa.selenium.*;
 import io.cucumber.java.pt.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import java.io.File;
-import java.io.IOException;
 import java.util.Map;
 import java.util.Random;
 import static Core.DriverFactory.getDriver;
+import static Core.DriverFactory.killDriver;
 
 public class CadastroDeClientesSteps {
 
@@ -23,14 +22,10 @@ public class CadastroDeClientesSteps {
     Random gerador = new Random();
     int numerosGerador = gerador.nextInt(9999);
 
-    @After
-    public void screenshots() {
-
-        try {
-            File file = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.FILE);
-            FileUtils.copyFile(file, new File("src/screenshots/"+numerosGerador+"cadastro.jpg"));
-        }catch (IOException e) {
-            e.printStackTrace();
+    @After()
+    public void fecharBrowser(){
+        if(Propriedades.FECHAR_BROWSER) {
+            killDriver();
         }
     }
 
