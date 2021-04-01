@@ -1,15 +1,18 @@
 package Steps;
 
 import io.cucumber.datatable.DataTable;
+import io.cucumber.java.After;
+import io.cucumber.java.Scenario;
+import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import io.cucumber.java.pt.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import java.io.File;
+import java.io.IOException;
 import java.util.Map;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
@@ -19,7 +22,19 @@ public class CadastroDeClientesSteps {
     WebDriver driver;
 
     Random gerador = new Random();
-    int numero = gerador.nextInt(100);
+    int numerosGerador = gerador.nextInt(9999);
+
+    @After
+    public void screenshots() {
+        TakesScreenshot ss = (TakesScreenshot) driver;
+        File file = ss.getScreenshotAs(OutputType.FILE);
+        try {
+            FileUtils.copyFile(file, new File("src/screenshots/"+numerosGerador+"cadastro.jpg"));
+        }catch (IOException e) {
+            e.printStackTrace();
+        }
+        driver.quit();
+    }
 
     @Dado("o usuario esta na tela de cadastro")
     public void oUsuarioEstaNaTelaDeCadastro() {
@@ -41,7 +56,7 @@ public class CadastroDeClientesSteps {
         Map<String, String> map = table.asMap(String.class, String.class);
         driver.findElement(By.name("usernameRegisterPage")).clear();
         driver.findElement(By.name("usernameRegisterPage")).
-                sendKeys(map.get("Username") + numero);
+                sendKeys(map.get("Username") + numerosGerador);
         driver.findElement(By.name("emailRegisterPage")).clear();
         driver.findElement(By.name("emailRegisterPage")).sendKeys(map.get("Email"));
         driver.findElement(By.name("passwordRegisterPage")).clear();
@@ -78,7 +93,7 @@ public class CadastroDeClientesSteps {
         String TextoCreatAccount= driver.findElement(By.xpath("//h3[contains(text(),'CREATE ACCOUNT')]")).getText();
         Assert.assertEquals("CREATE ACCOUNT", TextoCreatAccount);
         String textoUsername = driver.findElement(By.name("usernameRegisterPage")).getAttribute("value");
-        Assert.assertEquals("Test" + numero, textoUsername);
+        Assert.assertEquals("Test" + numerosGerador, textoUsername);
         String textoEmail = driver.findElement(By.name("emailRegisterPage")).getAttribute("value");
         Assert.assertEquals("tester@bdd.com", textoEmail);
         String textoPassword = driver.findElement(By.name("passwordRegisterPage")).getAttribute("value");
@@ -109,6 +124,6 @@ public class CadastroDeClientesSteps {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'DEMO')]")));
         String textoUsernameCadastrado = driver.
                 findElement(By.xpath("//header/nav[1]/ul[1]/li[3]/a[1]/span[1]")).getText();
-        Assert.assertEquals("Test" + numero, textoUsernameCadastrado);
+        Assert.assertEquals("Test" + numerosGerador, textoUsernameCadastrado);
     }
 }
