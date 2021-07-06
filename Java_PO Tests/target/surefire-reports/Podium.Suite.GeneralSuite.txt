@@ -1,0 +1,95 @@
+-------------------------------------------------------------------------------
+Test set: Podium.Suite.GeneralSuite
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 180.773 s <<< FAILURE! - in Podium.Suite.GeneralSuite
+Podium.Tests.ProductsTest.mustVerifyFreeVersionPageTest on mustVerifyFreeVersionPageTest(Podium.Tests.ProductsTest)  Time elapsed: 17.123 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//h3[contains(text(),'Podium Starter')]"}
+  (Session info: chrome=90.0.4430.72)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-441JRQV', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_282'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}), userDataDir=C:\Users\CJ\AppData\Local\Temp\scoped_dir10744_462540116}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:57439}, acceptInsecureCerts=false, browserVersion=90.0.4430.72, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: c19e3ff89f072580ac583e1becbeff87
+*** Element info: {Using=xpath, value=//h3[contains(text(),'Podium Starter')]}
+	at Podium.Tests.ProductsTest.mustVerifyFreeVersionPageTest(ProductsTest.java:101)
+
+Podium.Tests.ProductsTest.mustVerifyInboxPageTest on mustVerifyInboxPageTest(Podium.Tests.ProductsTest)  Time elapsed: 16.228 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'LEAD INTERACTIONâ„¢')]"}
+  (Session info: chrome=90.0.4430.72)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-441JRQV', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_282'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}), userDataDir=C:\Users\CJ\AppData\Local\Temp\scoped_dir10744_462540116}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:57439}, acceptInsecureCerts=false, browserVersion=90.0.4430.72, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: c19e3ff89f072580ac583e1becbeff87
+*** Element info: {Using=xpath, value=//span[contains(text(),'LEAD INTERACTIONâ„¢')]}
+	at Podium.Tests.ProductsTest.mustVerifyInboxPageTest(ProductsTest.java:83)
+
+Podium.Tests.FillingFormsWithDDTTest.mustFillPricingForms[0] on mustFillPricingForms[0](Podium.Tests.FillingFormsWithDDTTest)  Time elapsed: 16.818 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#FirstName"}
+  (Session info: chrome=90.0.4430.72)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-441JRQV', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_282'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}), userDataDir=C:\Users\CJ\AppData\Local\Temp\scoped_dir10744_462540116}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:57439}, acceptInsecureCerts=false, browserVersion=90.0.4430.72, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: c19e3ff89f072580ac583e1becbeff87
+*** Element info: {Using=id, value=FirstName}
+	at Podium.Tests.FillingFormsWithDDTTest.mustFillPricingForms(FillingFormsWithDDTTest.java:55)
+
+Podium.Tests.FillingFormsWithDDTTest.mustFillPricingForms[1] on mustFillPricingForms[1](Podium.Tests.FillingFormsWithDDTTest)  Time elapsed: 16.306 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#FirstName"}
+  (Session info: chrome=90.0.4430.72)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-441JRQV', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_282'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}), userDataDir=C:\Users\CJ\AppData\Local\Temp\scoped_dir10744_462540116}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:57439}, acceptInsecureCerts=false, browserVersion=90.0.4430.72, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: c19e3ff89f072580ac583e1becbeff87
+*** Element info: {Using=id, value=FirstName}
+	at Podium.Tests.FillingFormsWithDDTTest.mustFillPricingForms(FillingFormsWithDDTTest.java:55)
+
+Podium.Tests.FillingFormsWithDDTTest.mustFillPricingForms[2] on mustFillPricingForms[2](Podium.Tests.FillingFormsWithDDTTest)  Time elapsed: 15.708 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#FirstName"}
+  (Session info: chrome=90.0.4430.72)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-441JRQV', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_282'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}), userDataDir=C:\Users\CJ\AppData\Local\Temp\scoped_dir10744_462540116}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:57439}, acceptInsecureCerts=false, browserVersion=90.0.4430.72, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: c19e3ff89f072580ac583e1becbeff87
+*** Element info: {Using=id, value=FirstName}
+	at Podium.Tests.FillingFormsWithDDTTest.mustFillPricingForms(FillingFormsWithDDTTest.java:55)
+
+Podium.Tests.FillingFormsWithDDTTest.mustFillPricingForms[3] on mustFillPricingForms[3](Podium.Tests.FillingFormsWithDDTTest)  Time elapsed: 16.86 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#FirstName"}
+  (Session info: chrome=90.0.4430.72)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-441JRQV', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_282'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}), userDataDir=C:\Users\CJ\AppData\Local\Temp\scoped_dir10744_462540116}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:57439}, acceptInsecureCerts=false, browserVersion=90.0.4430.72, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: c19e3ff89f072580ac583e1becbeff87
+*** Element info: {Using=id, value=FirstName}
+	at Podium.Tests.FillingFormsWithDDTTest.mustFillPricingForms(FillingFormsWithDDTTest.java:55)
+
+Podium.Tests.FillingFormsWithDDTTest.mustFillPricingForms[4] on mustFillPricingForms[4](Podium.Tests.FillingFormsWithDDTTest)  Time elapsed: 16.181 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#FirstName"}
+  (Session info: chrome=90.0.4430.72)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-441JRQV', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_282'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}), userDataDir=C:\Users\CJ\AppData\Local\Temp\scoped_dir10744_462540116}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:57439}, acceptInsecureCerts=false, browserVersion=90.0.4430.72, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: c19e3ff89f072580ac583e1becbeff87
+*** Element info: {Using=id, value=FirstName}
+	at Podium.Tests.FillingFormsWithDDTTest.mustFillPricingForms(FillingFormsWithDDTTest.java:55)
+

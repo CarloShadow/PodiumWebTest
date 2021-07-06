@@ -37,7 +37,7 @@ public class LoginSteps {
     @Quando("preenche o Username com <Test81>")
     public void preenche_o_username_com_test81() {
         getDriver().findElement(By.name("username")).clear();
-        getDriver().findElement(By.name("username")).sendKeys(("Test81"));
+        getDriver().findElement(By.name("username")).sendKeys(("Test2345"));
     }
 
     @Quando("preenche Password com <123456Cd>")
@@ -49,7 +49,7 @@ public class LoginSteps {
     @Então("o login e feito com sucesso")
     public void o_login_e_feito_com_sucesso() {
         String textoUsername = getDriver().findElement(By.name("username")).getAttribute("value");
-        Assert.assertEquals("Test81", textoUsername);
+        Assert.assertEquals("Test2345", textoUsername);
         String textoPassword = getDriver().findElement(By.name("password")).getAttribute("value");
         Assert.assertEquals("123456Cd", textoPassword);
         WebDriverWait wait = new WebDriverWait(getDriver(), 20);
@@ -57,7 +57,7 @@ public class LoginSteps {
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id("sign_in_btnundefined")));
         ((JavascriptExecutor) getDriver()).executeScript("arguments[0].click();", element);
         String textoUsernameCadastrado = getDriver().
-                findElement(By.linkText("Test81")).getText();
-        Assert.assertEquals("Test81", textoUsernameCadastrado);
+                findElement(By.linkText("Test2345")).getText();
+        Assert.assertEquals("Test2345", textoUsernameCadastrado);
     }
 }

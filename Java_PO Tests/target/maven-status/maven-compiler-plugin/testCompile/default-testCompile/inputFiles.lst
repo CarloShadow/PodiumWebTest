@@ -1,13 +1,11 @@
-C:\Users\CJ\Podium Test\Web Automation\src\test\java\Podium\Core\Properties.java
-C:\Users\CJ\Podium Test\Web Automation\src\test\java\Podium\Pages\ProductsPage.java
-C:\Users\CJ\Podium Test\Web Automation\src\test\java\Podium\Core\BaseTest.java
-C:\Users\CJ\Podium Test\Web Automation\src\test\java\Podium\Pages\BasePage.java
-C:\Users\CJ\Podium Test\Web Automation\src\test\java\Podium\Pages\FormsFillingPage.java
-C:\Users\CJ\Podium Test\Web Automation\src\test\java\Podium\Core\BasePage1.java
-C:\Users\CJ\Podium Test\Web Automation\src\test\java\Podium\Suite\GeneralSuite.java
-C:\Users\CJ\Podium Test\Web Automation\src\test\java\Podium\Pages\FillingFormsWithDDTPage.java
-C:\Users\CJ\Podium Test\Web Automation\src\test\java\Podium\Core\Link.java
-C:\Users\CJ\Podium Test\Web Automation\src\test\java\Podium\Tests\FillingFormsWithDDTTest.java
-C:\Users\CJ\Podium Test\Web Automation\src\test\java\Podium\Tests\EnterpriseErrorsSimulationTest.java
-C:\Users\CJ\Podium Test\Web Automation\src\test\java\Podium\Core\DriverFactory.java
-C:\Users\CJ\Podium Test\Web Automation\src\test\java\Podium\Tests\ProductsTest.java
+C:\Users\CJ\WebTests\Java_PO Tests\src\test\java\Podium\Pages\BasePage.java
+C:\Users\CJ\WebTests\Java_PO Tests\src\test\java\Podium\Tests\FillingFormsWithDDTTest.java
+C:\Users\CJ\WebTests\Java_PO Tests\src\test\java\Podium\Core\DriverFactory.java
+C:\Users\CJ\WebTests\Java_PO Tests\src\test\java\Podium\Pages\FillingFormsWithDDTPage.java
+C:\Users\CJ\WebTests\Java_PO Tests\src\test\java\Podium\Core\Properties.java
+C:\Users\CJ\WebTests\Java_PO Tests\src\test\java\Podium\Tests\EnterpriseErrorsSimulationTest.java
+C:\Users\CJ\WebTests\Java_PO Tests\src\test\java\Podium\Pages\ProductsPage.java
+C:\Users\CJ\WebTests\Java_PO Tests\src\test\java\Podium\Core\BaseTest.java
+C:\Users\CJ\WebTests\Java_PO Tests\src\test\java\Podium\Suite\GeneralSuite.java
+C:\Users\CJ\WebTests\Java_PO Tests\src\test\java\Podium\Pages\FormsFillingPage.java
+C:\Users\CJ\WebTests\Java_PO Tests\src\test\java\Podium\Tests\ProductsTest.java

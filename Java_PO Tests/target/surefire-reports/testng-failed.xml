@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="3" junit="true" name="Failed suite [Surefire suite]" verbose="0">
-  <test junit="true" thread-count="3" name="Surefire test(failed)" verbose="0">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]" junit="true">
+  <test thread-count="1" verbose="0" name="Surefire test(failed)" junit="true">
     <classes>
       <class name="org.junit.runner.Description">
         <methods>
-          <include name="test1FazerMovimentacao"/>
-          <include name="test2AlterarConta"/>
-          <include name="test3RemoverContaComMovimentacao"/>
-          <include name="test2CamposObrigatorios"/>
-          <include name="test3MovimentacaoFutura"/>
-          <include name="test3InserirContaExistente"/>
-          <include name="test1ExcluirMovimentacao"/>
+          <include name="mustVerifyInboxPageTest"/>
+          <include name="mustVerifyFreeVersionPageTest"/>
+          <include name="mustFillPricingForms"/>
+          <include name="mustFillPricingForms"/>
+          <include name="mustFillPricingForms"/>
+          <include name="mustFillPricingForms"/>
+          <include name="mustFillPricingForms"/>
         </methods>
       </class> <!-- org.junit.runner.Description -->
     </classes>
