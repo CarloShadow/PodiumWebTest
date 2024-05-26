@@ -1,0 +1,19 @@
+package Core;
+
+import java.util.concurrent.TimeUnit;
+
+import static Core.DriverFactory.getDriver;
+
+public class Browser {
+
+    private String browserDriverPath = "Users/carlosalberto/WebDrivers/chromedriver";
+
+    private String nomeBrowser = "chrome";
+
+    public void iniciarBrowser() {
+        System.setProperty("webdriver."+nomeBrowser+".driver", browserDriverPath);
+        getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        getDriver().get("https://www.saucedemo.com");
+    }
+
+}

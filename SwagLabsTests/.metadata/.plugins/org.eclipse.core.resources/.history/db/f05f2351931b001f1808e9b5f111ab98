@@ -1,0 +1,11 @@
+package Steps;
+
+import io.cucumber.java.pt.Dado;
+
+public class LoginSteps {
+
+	@Dado("^o usuario esta na tela de login$")
+	public void oUsuarioEstaNaTelaDeLogin() throws Throwable {
+	}
+
+}

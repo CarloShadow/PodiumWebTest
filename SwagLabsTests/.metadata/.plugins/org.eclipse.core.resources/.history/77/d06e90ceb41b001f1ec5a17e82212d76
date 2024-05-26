@@ -1,0 +1,15 @@
+//package Core;
+//
+//import io.cucumber.java.Before;
+//
+//import static Core.DriverFactory.getDriver;
+//
+//public class Browser {
+//
+//	@Before
+//    public void iniciarBrowser() {
+//		
+//        
+//    }
+//
+//}

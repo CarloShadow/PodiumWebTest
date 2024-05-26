@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="io.cucumber.java.pt.Dados"/>
+    <fullyQualifiedTypeName name="io.cucumber.java.pt.Dado"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+    <fullyQualifiedTypeName name="io.cucumber.core.internal.com.fasterxml.jackson.annotation.JsonTypeInfo.Id"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+    <fullyQualifiedTypeName name="Pages.LoginPage"/>
+    <fullyQualifiedTypeName name="io.cucumber.java.pt.Quando"/>
+    <fullyQualifiedTypeName name="Core.Browser"/>
+    <fullyQualifiedTypeName name="org.junit.BeforeClass"/>
+    <fullyQualifiedTypeName name="Core.DriverFactory"/>
+</qualifiedTypeNameHistroy>

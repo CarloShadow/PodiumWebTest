@@ -1,0 +1,7 @@
+# language: pt
+Funcionalidade: Carrinho
+
+  Cenário: 01 Adicionar produto no carrinho
+    Dado o usuario esta na tela de login
+    Quando preenche os seguintes dado
+    Então e

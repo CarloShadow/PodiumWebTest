@@ -1,0 +1,16 @@
+package Core;
+
+import java.util.concurrent.TimeUnit;
+
+
+public class Browser extends DriverFactory{
+
+	
+    public void iniciarBrowser() {
+    	System.setProperty("webdriver.chrome.driver", "/Users/carlosalberto/WebDrivers/chromedriver");
+        getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        getDriver().get("https://www.saucedemo.com");
+        
+    }
+
+}

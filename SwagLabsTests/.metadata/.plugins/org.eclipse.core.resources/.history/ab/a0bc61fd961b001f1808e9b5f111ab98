@@ -1,0 +1,22 @@
+package Steps;
+
+import org.junit.BeforeClass;
+
+import Core.Browser;
+import io.cucumber.java.pt.Dado;
+
+public class LoginSteps {
+	
+	Browser browser = new Browser();
+	
+	@BeforeClass
+	private void init() {
+		browser.iniciarBrowser();
+	}
+
+	@Dado("^o usuario esta na tela de login$")
+	public void oUsuarioEstaNaTelaDeLogin(){
+		
+	}
+
+}

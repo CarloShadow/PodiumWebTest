@@ -1,0 +1,26 @@
+package Steps;
+
+import Core.Browser;
+import Pages.LoginPage;
+import io.cucumber.java.pt.Dado;
+import io.cucumber.java.pt.Quando;
+
+public class LoginSteps {
+	
+	Browser browser = new Browser();
+	LoginPage lpg = new LoginPage();
+
+	@Dado("^o usuario esta na tela de login$")
+	public void oUsuarioEstaNaTelaDeLogin(){
+		browser.iniciarBrowser();
+	}
+
+	@Quando("^realiza o login$")
+	public void realizaOLogin() {
+		lpg.inputUserName.clear();
+		lpg.inputUserName.sendKeys("standard_user");
+		lpg.inputPassword.clear();
+		lpg.inputPassword.sendKeys("secret_sauce");
+	}
+
+}

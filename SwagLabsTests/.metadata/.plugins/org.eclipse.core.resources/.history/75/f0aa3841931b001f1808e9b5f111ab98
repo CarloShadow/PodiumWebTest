@@ -1,0 +1,12 @@
+package Steps;
+
+import io.cucumber.java.pt.Dado;
+
+public class LoginSteps {
+
+	@Dado("que o usuario esta na tela de login")
+	public void que_o_usuario_esta_na_tela_de_login() {
+
+	}
+
+}

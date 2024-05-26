@@ -1,0 +1,19 @@
+package Core;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+
+
+public class Browser {
+
+	private static WebDriver driver;
+	
+    public void iniciarBrowser() {
+        System.setProperty("webdriver.chrome.driver", "/Users/carlosalberto/WebDrivers/chromedriver");
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.get("https://www.saucedemo.com");
+        
+    }
+
+}

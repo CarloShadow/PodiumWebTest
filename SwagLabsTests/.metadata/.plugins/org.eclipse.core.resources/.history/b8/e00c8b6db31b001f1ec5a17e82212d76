@@ -1,0 +1,32 @@
+package Steps;
+
+
+import static Core.DriverFactory.getDriver;
+
+import java.util.concurrent.TimeUnit;
+
+import Core.Browser;
+import Pages.LoginPage;
+import io.cucumber.java.pt.Dado;
+import io.cucumber.java.pt.Quando;
+
+public class LoginSteps extends LoginPage{
+	 
+	Browser browser = new Browser();
+
+	@Dado("^o usuario esta na tela de login$")
+	public void oUsuarioEstaNaTelaDeLogin(){
+		System.setProperty("webdriver.chrome.driver", "/Users/carlosalberto/WebDrivers/chromedriver");
+        getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        getDriver().get("https://www.saucedemo.com");
+	}
+
+	@Quando("^realiza o login$")
+	public void realizaOLogin() {
+		inputUserName.clear();
+		inputUserName.sendKeys("standard_user");
+		inputPassword.clear();
+		inputPassword.sendKeys("secret_sauce");
+	}
+
+}
