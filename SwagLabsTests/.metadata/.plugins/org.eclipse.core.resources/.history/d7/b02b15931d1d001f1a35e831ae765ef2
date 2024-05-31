@@ -1,0 +1,14 @@
+package Core;
+
+import org.openqa.selenium.WebDriver;
+import static Core.DriverFactory.getDriver;
+
+public class Browser {
+	
+	WebDriver driver;
+	
+	driver = new ChromeDriver();
+	
+	
+
+}

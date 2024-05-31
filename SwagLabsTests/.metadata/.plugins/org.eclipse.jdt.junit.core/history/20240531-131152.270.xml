@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="SwagRunner" project="SwagLabs-Web-Tests" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="Runner.SwagRunner" time="11.452">
+    <testsuite name="Carrinho" time="11.452">
+      <testcase name="01 Adicionar produto no carrinho" classname="Carrinho" time="11.452"/>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,24 @@
+package Steps;
+
+import Pages.LoginPage;
+import io.cucumber.java.pt.Dado;
+import io.cucumber.java.pt.Quando;
+
+public class LoginSteps extends LoginPage{
+	 
+
+	@Dado("^o usuario esta na tela de login$")
+	public void oUsuarioEstaNaTelaDeLogin(){
+		
+	}
+
+	@Quando("^realiza o login$")
+	public void realizaOLogin() {
+		inputUserName.clear();
+		inputUserName.sendKeys("standard_user");
+		
+		inputPassword.clear();
+		inputPassword.sendKeys("secret_sauce");
+	}
+
+}

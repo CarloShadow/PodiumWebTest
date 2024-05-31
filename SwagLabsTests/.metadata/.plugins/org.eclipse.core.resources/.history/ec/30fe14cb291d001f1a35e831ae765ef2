@@ -1,0 +1,14 @@
+package Pages;
+
+public class LoginPage {
+	
+
+//	public
+//	WebElement inputPassword = driver.findElement(By.name("password"));
+//	
+//	public
+//	WebElement btnLogin = driver.findElement(By.xpath("//button[@type='submit']"));
+//	
+//	public
+//	WebElement txtLoginTitle = driver.findElement(By.xpath("//h5[text()='Login']"));
+}

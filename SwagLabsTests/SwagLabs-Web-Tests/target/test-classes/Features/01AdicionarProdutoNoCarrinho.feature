@@ -3,6 +3,8 @@ Funcionalidade: Carrinho
 
   @01
   Cenário: 01 Adicionar produto no carrinho
-    Dado o usuario esta na tela de login
-    Quando realiza o login
-#    Então e
+    Dado estou na tela de login
+  	Quando realizo o login
+    E adiciono um produto ao carrinho
+    E abro o carrinho
+    Então valido o produto adicionado no carrinho

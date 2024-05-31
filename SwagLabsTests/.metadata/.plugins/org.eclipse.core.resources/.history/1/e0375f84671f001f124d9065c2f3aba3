@@ -1,0 +1,36 @@
+package Steps;
+
+//import static org.junit.Assert.assertTrue;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+import Core.Browser;
+import Core.DriverFactory;
+import Pages.LoginPage;
+import io.cucumber.java.pt.Dado;
+//import io.cucumber.java.pt.Quando;
+
+public class LoginSteps{
+	 
+	Browser browser = new Browser();
+	LoginPage pg = new LoginPage();
+	
+
+	@Dado("^estou na tela de login$")
+	public void oUsuarioEstaNaTelaDeLogin(){
+		browser.iniciarBrowser();
+	}
+//
+//	@Quando("^realizo o login$")
+//	public void realizaOLogin() {
+//		inputUserName.clear();
+//		inputUserName.sendKeys("Admin");
+//		
+//		inputPassword.clear();
+//		inputPassword.sendKeys("admin123");
+//		
+//		btnLogin.click();
+//	}
+
+}

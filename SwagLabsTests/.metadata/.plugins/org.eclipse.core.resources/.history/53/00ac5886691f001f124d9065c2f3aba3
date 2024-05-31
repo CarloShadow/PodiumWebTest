@@ -1,0 +1,31 @@
+package Pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import Core.DriverFactory;
+
+public class GeneralPage{
+
+	
+	
+	WebDriver driver = DriverFactory.getDriver();
+	
+	 private By btnRecruitment = By.xpath("//span[text()='Recruitment']");
+	
+	 private By inputFirstname = By.xpath("firstName");
+	
+
+//	public
+//	WebElement inputLastname = driver.findElement(By.name("lastName"));
+//	
+//	public
+//	WebElement btnAdd = driver.findElement(By.xpath("//button[text()= ' Add ']"));
+	 
+//	  public String loginValidUser(String userName, String password) {
+//		    driver.findElement(inputFirstname).sendKeys(userName);
+//		    driver.findElement(passwordBy).sendKeys(password);
+//		    driver.findElement(signinBy).click();
+//		  }
+	
+}

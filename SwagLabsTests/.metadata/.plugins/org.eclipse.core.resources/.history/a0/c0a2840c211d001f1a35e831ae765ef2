@@ -1,0 +1,27 @@
+package Pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class GeneralPage{
+
+	
+	
+	WebDriver driver = new ChromeDriver();
+	
+	
+	public
+	WebElement btnRecruitment = driver.findElement(By.xpath("//span[text()='Recruitment']"));
+	
+	public
+	WebElement inputFirstname = driver.findElement(By.name("firstName"));
+
+	public
+	WebElement inputLastname = driver.findElement(By.name("lastName"));
+	
+	public
+	WebElement btnAdd = driver.findElement(By.xpath("//button[text()= ' Add ']"));
+	
+}

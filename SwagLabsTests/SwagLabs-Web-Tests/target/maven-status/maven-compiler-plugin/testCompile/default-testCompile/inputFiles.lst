@@ -1,5 +1,8 @@
-/Users/carlosalberto/eclipse-workspace/Web-Tests/OrangeHRMTests/SwagLabs-Web-Tests/src/test/java/Steps/LoginSteps.java
-/Users/carlosalberto/eclipse-workspace/Web-Tests/OrangeHRMTests/SwagLabs-Web-Tests/src/test/java/Core/DriverFactory.java
-/Users/carlosalberto/eclipse-workspace/Web-Tests/OrangeHRMTests/SwagLabs-Web-Tests/src/test/java/Runner/SwagRunner.java
-/Users/carlosalberto/eclipse-workspace/Web-Tests/OrangeHRMTests/SwagLabs-Web-Tests/src/test/java/Core/Propriedades.java
-/Users/carlosalberto/eclipse-workspace/Web-Tests/OrangeHRMTests/SwagLabs-Web-Tests/src/test/java/Pages/LoginPage.java
+/Users/carlosalberto/eclipse-workspace/WebTests/SwagLabsTests/SwagLabs-Web-Tests/src/test/java/Utils/Utils.java
+/Users/carlosalberto/eclipse-workspace/WebTests/SwagLabsTests/SwagLabs-Web-Tests/src/test/java/Steps/CartTestsSteps.java
+/Users/carlosalberto/eclipse-workspace/WebTests/SwagLabsTests/SwagLabs-Web-Tests/src/test/java/Core/Propriedades.java
+/Users/carlosalberto/eclipse-workspace/WebTests/SwagLabsTests/SwagLabs-Web-Tests/src/test/java/Pages/GeneralPage.java
+/Users/carlosalberto/eclipse-workspace/WebTests/SwagLabsTests/SwagLabs-Web-Tests/src/test/java/Steps/LoginSteps.java
+/Users/carlosalberto/eclipse-workspace/WebTests/SwagLabsTests/SwagLabs-Web-Tests/src/test/java/Core/DriverFactory.java
+/Users/carlosalberto/eclipse-workspace/WebTests/SwagLabsTests/SwagLabs-Web-Tests/src/test/java/Runner/SwagRunner.java
+/Users/carlosalberto/eclipse-workspace/WebTests/SwagLabsTests/SwagLabs-Web-Tests/src/test/java/Pages/LoginPage.java

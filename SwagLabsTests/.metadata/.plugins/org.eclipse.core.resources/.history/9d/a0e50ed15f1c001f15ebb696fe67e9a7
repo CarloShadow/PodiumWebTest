@@ -1,0 +1,12 @@
+package Steps;
+
+import Pages.GeneralPage;
+
+public class CartTestsSteps extends GeneralPage{
+	
+	
+	
+	
+	
+
+}

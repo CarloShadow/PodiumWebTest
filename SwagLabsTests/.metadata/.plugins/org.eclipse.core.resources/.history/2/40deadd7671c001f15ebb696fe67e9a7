@@ -1,0 +1,50 @@
+package Core;
+
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriver.Options;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class DriverFactory {
+
+	private static WebDriver driver;
+
+	private DriverFactory() {
+	}
+
+	public static WebDriver getDriver() {
+		if (driver == null) {
+			switch (Propriedades.browser) {
+			case FIREFOX:
+				driver = new FirefoxDriver();
+				break;
+
+			case CHROME:
+				System.setProperty("webdriver.chrome.driver", "/Users/carlosalberto/WebDrivers/chromedriver");
+
+				driver = new ChromeDriver();
+				break;
+
+			case EDGE:
+				driver = new EdgeDriver();
+				break;
+
+			}
+			Duration timeout = Duration.ofSeconds(10);
+			getDriver().manage().timeouts().implicitlyWait(timeout.toMillis(), TimeUnit.MILLISECONDS);
+			getDriver().get("https://www.saucedemo.com");
+			getDriver().manage().window().maximize();
+		}
+		return driver;
+	}
+//    public static void killDriver(){
+//        if(driver != null) {
+//            driver.quit();
+//            driver = null;
+//        }
+//    }
+}

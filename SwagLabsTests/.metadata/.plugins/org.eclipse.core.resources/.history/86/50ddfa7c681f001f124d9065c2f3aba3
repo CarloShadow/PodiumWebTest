@@ -1,0 +1,23 @@
+package Pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import Core.DriverFactory;
+
+public class LoginPage {
+
+	WebDriver driver = DriverFactory.getDriver();
+
+	private By inputUsername = By.name("username");
+	private By inputPassword = By.name("password");
+	private By btnLogin = By.xpath("//button[@type='submit']");
+
+	public void loginValidUser(String userName, String password) {
+		driver.findElement(inputUsername).sendKeys(userName);
+		driver.findElement(inputPassword).sendKeys(password);
+		driver.findElement(btnLogin).click();
+	}
+
+}

@@ -1,0 +1,38 @@
+package Pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import Core.DriverFactory;
+
+
+public class LoginPage {
+	
+	private DriverFactory driver;
+	
+	  public LoginPage(DriverFactory driver) {
+	        this.driver = driver;
+	        initializeElements();
+	    }
+	  
+	   public WebElement txtLoginTitle;
+	    public WebElement usernameInput;
+	    public WebElement passwordInput;
+	    public WebElement loginButton;
+	
+	  private void initializeElements() {
+	        txtLoginTitle = driver.findElement(By.xpath("//h5[text()='Login']"));
+	        usernameInput = driver.findElement(By.name("username"));
+	        passwordInput = driver.findElement(By.name("password"));
+	        loginButton = driver.findElement(By.xpath("//button[contains(text(),'Login')]"));
+	    }
+//	public
+//	WebElement inputPassword = driver.findElement(By.name("password"));
+//	
+//	public
+//	WebElement btnLogin = driver.findElement(By.xpath("//button[@type='submit']"));
+//	
+//	public
+//	WebElement txtLoginTitle = driver.findElement(By.xpath("//h5[text()='Login']"));
+}

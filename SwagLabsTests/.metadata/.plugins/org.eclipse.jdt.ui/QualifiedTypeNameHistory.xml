@@ -2,12 +2,18 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="io.cucumber.java.pt.Dados"/>
     <fullyQualifiedTypeName name="io.cucumber.java.pt.Dado"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
     <fullyQualifiedTypeName name="io.cucumber.core.internal.com.fasterxml.jackson.annotation.JsonTypeInfo.Id"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
-    <fullyQualifiedTypeName name="Pages.LoginPage"/>
     <fullyQualifiedTypeName name="io.cucumber.java.pt.Quando"/>
-    <fullyQualifiedTypeName name="Core.Browser"/>
-    <fullyQualifiedTypeName name="org.junit.BeforeClass"/>
     <fullyQualifiedTypeName name="Core.DriverFactory"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+    <fullyQualifiedTypeName name="Pages.GeneralPage"/>
+    <fullyQualifiedTypeName name="java.time.Duration"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.ElementNotVisibleException"/>
+    <fullyQualifiedTypeName name="org.junit.BeforeClass"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.By.ByXPath"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+    <fullyQualifiedTypeName name="Core.Browser"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.remote.internal.WebElementToJsonConverter"/>
+    <fullyQualifiedTypeName name="Pages.LoginPage"/>
 </qualifiedTypeNameHistroy>

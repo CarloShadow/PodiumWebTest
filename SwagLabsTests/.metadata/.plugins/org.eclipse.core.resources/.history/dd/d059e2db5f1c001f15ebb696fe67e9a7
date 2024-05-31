@@ -1,0 +1,16 @@
+package Steps;
+
+import Pages.GeneralPage;
+import io.cucumber.java.pt.E;
+
+public class CartTestsSteps extends GeneralPage{
+	
+	
+	@E("^adiciono um produto ao carrinho$")
+	public void adicionoUmProdutoAoCarrinho() {
+	}
+
+	
+	
+
+}

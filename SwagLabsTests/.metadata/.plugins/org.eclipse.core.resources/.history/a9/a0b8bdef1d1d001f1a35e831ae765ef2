@@ -1,0 +1,25 @@
+package Core;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import static Core.DriverFactory.getDriver;
+
+import java.util.concurrent.TimeUnit;
+
+public class Browser {
+	
+	
+	public void iniciarBrowser() {
+		System.setProperty("webdriver.chrome.driver", "/Users/carlosalberto/WebDrivers/chromedriver");
+		
+		WebDriver driver;
+		
+		driver = new ChromeDriver();
+		
+		getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		getDriver().get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		getDriver().manage().window().maximize();
+	}
+
+}

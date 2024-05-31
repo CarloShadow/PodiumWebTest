@@ -1,17 +1,21 @@
 package Pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import static Core.DriverFactory.getDriver;
+import org.openqa.selenium.WebDriver;
+import Core.DriverFactory;
 
 public class LoginPage {
-	
-	public
-	WebElement inputUserName = getDriver().findElement(By.id("user-name"));
-	
-	public
-	WebElement inputPassword = getDriver().findElement(By.id("password"));
-	
-	public
-	WebElement loginPassword = getDriver().findElement(By.id("login-button"));
+
+	WebDriver driver = DriverFactory.getDriver();
+
+	private By inputUsername = By.id("user-name");
+	private By inputPassword = By.id("password");
+	private By btnLogin = By.id("login-button");
+
+	public void loginValidUser(String userName, String password) {
+		driver.findElement(inputUsername).sendKeys(userName);
+		driver.findElement(inputPassword).sendKeys(password);
+		driver.findElement(btnLogin).click();
+	}
+
 }

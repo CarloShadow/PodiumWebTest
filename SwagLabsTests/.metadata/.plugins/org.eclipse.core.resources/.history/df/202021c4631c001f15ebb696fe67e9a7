@@ -1,0 +1,14 @@
+package Pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import static Core.DriverFactory.getDriver;
+
+public class GeneralPage {
+
+	public
+	WebElement btnAddCartOnesie = getDriver().findElement(By.id("add-to-cart-sauce-labs-onesie"));
+	
+	
+	
+}

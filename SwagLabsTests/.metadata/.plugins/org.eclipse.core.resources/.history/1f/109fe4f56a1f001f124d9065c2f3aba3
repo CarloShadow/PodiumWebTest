@@ -1,0 +1,25 @@
+package Pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import Core.DriverFactory;
+
+public class GeneralPage{
+
+	
+	
+	WebDriver driver = DriverFactory.getDriver();
+	
+	 private By btnAddCartOnesie = By.id("add-to-cart-sauce-labs-onesie");
+	
+	 private By btnCart = By.id("shopping_cart_container");
+	 
+	 private By txtInventoryItem = By.id("inventory-item-name");
+	
+	 
+	 
+	 
+
+	
+}
